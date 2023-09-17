@@ -2,6 +2,9 @@ body {
     font-family: "Roboto", sans-serif;
     margin: 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header, footer {
@@ -14,12 +17,11 @@ header, footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .header-logo {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .header-links {
@@ -39,7 +41,7 @@ a {
     color: #E5E7EB;
 }
 
-.hero {
+.hero-container {
     display: flex;
     justify-content: space-between;
     padding: 100px 0px;
@@ -75,20 +77,70 @@ button {
     margin-top: 10px;
 }
 
-.information-main {
+.information-container {
     background-color: white;
+    padding: 0px 150px;
 }
 
 .info-header {
     font-size: 36px;
-    font-weight: 800px;
+    font-weight: 700;
     color: #1F2937;
 }
 
+.quote-container {
+    padding: 0px 150px;
+    background-color: #E5E7EB;
+}
 
+.quote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
 
+.thor {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
 
+}
 
+.cta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 150px;
+    margin: 0;
+}
+
+.cta-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    flex-basis: 100%;
+    padding: 36px 0px;
+    border-radius: 8px;
+
+}
+
+.cta-header {
+    font-weight: bold;
+}
+
+.cta-text {
+    color: #E5E7EB;
+    font-size: 14px;
+
+}
+
+.cta-button {
+    color: white;
+    background: none;
+    border-color: white;
+    border-style: solid;
+}
 
 footer {
     display: flex;

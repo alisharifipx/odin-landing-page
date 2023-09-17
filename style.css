@@ -4,16 +4,22 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 header, footer {
     background-color: #1F2937;
     color: #F9FAF8;
-    padding: 0px 150px;
+    display: flex;
+    justify-content: center;
 }
 
 .header {
+    background-color: #1F2937;
+    width: 960px;
+}
+
+.top-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,7 +85,7 @@ button {
 
 .information-container {
     background-color: white;
-    padding: 0px 150px;
+    padding: 0;
 }
 
 .info-header {
@@ -87,58 +93,85 @@ button {
     font-weight: bold;
     color: #1F2937;
     text-align: center;
+    padding: 32px;
 }
 
 .info-list {
     display: flex;
     text-align: center;
-
+    list-style: none;
+    padding: 0;
 }
 
-li {
-    list-style: none;
+.image-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-bottom: 107.33px;
+}
+
+.img-container {
+    text-align: center;
+    width: 158px;
+}
+
+.img-box-text {
+    padding-top: 10px;
 }
 
 .img-box {
-    border-color: #3882F6;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3882F6;
+    margin: 0;
+    border-radius: 12px;
+}
+
+.quote-bg {
+    display: flex;
+    justify-content: center;
+    background-color: #E5E7EB;
 }
 
 .quote-container {
-    padding: 100px 250px;
+    padding: 100px 0px;
     background-color: #E5E7EB;
+    width: 960px;
 }
 
 .quote {
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
+    padding: 0px 85px;
 }
 
 .thor {
-    font-family: "Roboto", sans-serif;
+    font-size: 20px;
     font-weight: 700;
     text-align: right;
+    padding-right: 128px;
 }
 
 .cta-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 80px 150px;
     margin: 0;
-
 }
 
 .cta-main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #3882F6;
     color: #F9FAF8;
-    flex-basis: 100%;
-    padding: 36px 0px;
-    border-radius: 8px;
 
+    padding: 36px 80px;
+    border-radius: 8px;
+    width: 960px;
 }
 
 .cta-header {
@@ -166,4 +199,5 @@ footer {
     font-size: 16px;
     padding: 28px;
 }
+
 
